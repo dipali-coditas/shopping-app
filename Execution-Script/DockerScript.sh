@@ -55,15 +55,3 @@ sudo docker-compose up -d || echo "error in compose file"
 
 
 #-----------------------------------------------------------------------------------------------------------------------------------------
-# backend_container_id=$(sudo docker ps -a | grep backend | awk '{print $1}')
-# sudo docker rm $backend_container_id 2>/dev/null || echo "Backend Container Not Found"
-
-# frontend_container_id=$(sudo docker ps -a | grep frontend | awk '{print $1}')
-# sudo docker rm $frontend_container_id 2>/dev/null || echo "Frontend Container Not Found"
-
-# backend_image_id=$(sudo docker images | grep backend | awk '{print $3}')
-# sudo docker rmi $backend_image_id  2>/dev/null || echo "Backend Image Not Found"
-
-# frontend_image_id=$(sudo docker images | grep frontend | awk '{print $3}')
-# sudo docker rmi $frontend_image_id 2>/dev/null || echo "Frontend Image Not Found"
-#-----------------------------------------------------------------------------------------------------------------------------------------
