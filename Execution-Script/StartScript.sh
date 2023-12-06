@@ -1,6 +1,7 @@
 #!/bin/bash
 
-# Author: Ankit Raut 
+# Author: Dipali Dhanwade
+# Author: Ankit Raut
 
 # Description: 
 
