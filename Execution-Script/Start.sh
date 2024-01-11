@@ -39,6 +39,10 @@ sudo systemctl restart nginx
 echo "*** Successfully Configured Nginx ***"
 
 cd
+
 sudo apt-get install docker -y >/dev/null && echo "** Successfully Installed Docker **" || { echo "Failed to Install Docker"; exit 1; }
 sudo apt-get install docker-compose -y >/dev/null && echo "** Successfully Installed Docker-Compose **" || { echo "Failed to Install Docker-Copmose"; exit 1; }
+
+cd "$path"
+sudo docker-compose up -d || echo "error in compose file"
 
